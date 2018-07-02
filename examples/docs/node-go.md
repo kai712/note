@@ -1,5 +1,4 @@
 <h1 class="mb-0 align-center">从node到go</h1>
-<p class="mt-0 align-center">总结node与go的不同之处</p>
 
 
 Go仅用标准库就能写大多数的软件。用Node.js时，我们几乎都是不得不引入一个外部的库, 这样做既增加了部署的时间，也增加了来自第三方软件的潜在隐患。只用标准库能让我们写的代码更快更安全。
