@@ -28,5 +28,8 @@ export default {
 
 <style lang="less">
 @import url('../assets/docs.less');
-@import url('highlight.js/styles/monokai-sublime.css');
+// atom-one-light
+// googlecode
+// qtcreator_light
+@import url('highlight.js/styles/googlecode.css');
 </style>
