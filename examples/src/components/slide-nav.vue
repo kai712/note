@@ -5,7 +5,19 @@
 				<router-link class="nav-title-item" to="/" >前言</router-link>
       </li>
 			<li class="nav-item">
-				<router-link class="nav-title-item" active-class="active" to="/node-go" >摒弃 node 拥抱 go</router-link>
+				<router-link class="nav-title-item" active-class="active" to="/node-go" >客观对比Node 与 Golang</router-link>
+      </li>
+			<li class="nav-item">
+				<router-link class="nav-title-item" active-class="active" to="/golang_keywords" >Golang的25个关键字总结</router-link>
+			</li>
+			<li class="nav-item">
+				<router-link class="nav-title-item" active-class="active" to="/array_slice_map" >Array、Slice、Map原理浅析</router-link>
+      </li>
+			<li class="nav-item">
+				<router-link class="nav-title-item" active-class="active" to="/golang_gc" >Go 与 Node 内存分配与垃圾回收</router-link>
+			</li>
+			<li class="nav-item">
+				<router-link class="nav-title-item" active-class="active" to="/goroutine" >goroutine 调度原理</router-link>
       </li>
     </ul>
   </div>

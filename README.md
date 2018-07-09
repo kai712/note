@@ -9,6 +9,14 @@ npm run dev
 ```
 
 # Golang
-- [x] [Node与Golang的区别](https://github.com/kai712/note/blob/master/examples/docs/node-go.md)
+- [x] [客观对比Node 与 Golang](https://github.com/kai712/note/blob/master/examples/docs/node-go.md)
+
+- [x] [Golang的25个关键字总结](https://github.com/kai712/note/blob/master/examples/docs/golang_keywords.md)
+
+- [x] [Array、Slice、Map原理浅析](https://github.com/kai712/note/blob/master/examples/docs/array_slice_map.md)
+
+- [x] [Go 与 Node 内存分配与垃圾回收](https://github.com/kai712/note/blob/master/examples/docs/golang_gc.md)
+
+- [x] [goroutine 调度原理](https://github.com/kai712/note/blob/master/examples/docs/goroutine.md)
 
 # 前端

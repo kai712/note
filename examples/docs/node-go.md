@@ -1,9 +1,10 @@
-<h1 class="mb-0 align-center">从node到go</h1>
-
+<h1 class="mb-0 align-center">客观对比Node 与 Golang</h1>
 
 Go仅用标准库就能写大多数的软件。用Node.js时，我们几乎都是不得不引入一个外部的库, 这样做既增加了部署的时间，也增加了来自第三方软件的潜在隐患。只用标准库能让我们写的代码更快更安全。
 
 另外值得一提的是，node的代码在跨平台运行时，有时会碰到各种意想不到的问题，而go语言的代码实现跨平台运行时仅仅配置一下gopath即可完美兼容。
+
+![d](https://odum9helk.qnssl.com/FidxAZ2ytkvmcIPwxbeaIMMMaqzK)
 
 ### 包管理
 
@@ -39,11 +40,15 @@ node只适合IO密集型，它没有提供太多的并发基元。唯一能同�
 
 node运行机制：node运行机制是事件循环机制，每次从事件队列中取出一个函数之类的，然后去运行它，如果过程中发生IO事件，比如利用fs模块写一个文件，或者去数据库查询信息等，node就会将这个IO操作加入到一个线程池中去执行，事件循环在主线程继续执行，当线程池中的事件执行完毕，就会将这个结果放入到主线程中。但是如果遇到计算密集型的任务，因为node是单线程，就会阻塞主线程直到该任务执行完毕才会往下执行，所以node不适合做CPU密集型。
 
+![d](https://odum9helk.qnssl.com/FqEfwis0P76D8kf-dBFDyVOhdjcD)
+
 #### go
 
 go适合IO密集型同样也适合CPU密集型，你可以在程序运行的任何阶段，创建goruntine去实现并发，并且go提供了channel来实现协程间通信，很赞有木有。
 
-go并发原理：Golang实现了 CSP 并发模型做为并发基础，底层使用goroutine做为并发实体，goroutine非常轻量级可以创建几十万个实体。实体间通过 channel 继续匿名消息传递使之解耦，在语言层面实现了自动调度，这样屏蔽了很多内部细节，对外提供简单的语法关键字，大大简化了并发编程的思维转换和管理线程的复杂性。
+在操作系统提供的内核线程之上，Go搭建了一个特有的两级线程模型。goroutine是实际并发执行的实体，每个实体之间是通过channel通讯来实现数据共享。关于go的并发及调度原理，戳这里[goroutine 调度原理](https://github.com/kai712/note/blob/master/examples/docs/goroutine.md)
+
+![d](https://odum9helk.qnssl.com/FpcDflIURg0pkAGTg_R1zw6FYQzX)
 
 ### 错误处理
 

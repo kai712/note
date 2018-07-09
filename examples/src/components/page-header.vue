@@ -2,7 +2,7 @@
   <div class="page-header">
     <div class="page-header__top">
       <h1 class="page-header__logo">
-        <a href="#">JavaScript Fragment</a>
+        <a href="#">Note</a>
       </h1>
       <ul class="page-header__navs">
         <li class="page-header__item">
