@@ -18,11 +18,7 @@ import SideNav from './components/slide-nav'
 
 export default {
   name: 'App',
-  components: { PageHeader, SideNav },
-  data () {
-    return {
-    }
-  }
+  components: { PageHeader, SideNav }
 }
 </script>
 
